@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #1f2235;
+  background: #351f24;
   font-family: "Baloo Tamma 2", cursive;
 }
 
@@ -49,7 +49,7 @@ body {
 
 /* About Section */
 .about {
-  background: #313552;
+  background: #523531;
   border-radius: 0.5rem;
 }
 
@@ -59,7 +59,7 @@ body {
 
 /* Social Media Section */
 #social-media {
-  background: #313552;
+  background: #523131;
 }
 
 /* Add color to Social Media Links */
