@@ -185,3 +185,99 @@ footer {
   color: #aaa;
   background: #161616;
 }
+
+/* vb */
+/* === Light Theme Styles === */
+body:not(.dark) {
+  background-color: #f8f9fa;
+  color: #111;
+}
+
+body:not(.dark) .navbar,
+body:not(.dark) footer {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body:not(.dark) .logo {
+  color: #007acc;
+}
+
+body:not(.dark) .card {
+  background-color: #ffffff;
+  color: #111;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark) .btn {
+  background-color: #007acc;
+  color: white;
+}
+
+body:not(.dark) .btn-outline {
+  border-color: #007acc;
+  color: #007acc;
+}
+
+body:not(.dark) .btn-outline:hover {
+  background-color: #007acc;
+  color: white;
+}
+
+body:not(.dark) .bg-light {
+  background-color: #f1f1f1;
+}
+
+body:not(.dark) .highlight {
+  color: #007acc;
+}
+
+body:not(.dark) .nav-links a {
+  color: #333;
+}
+/* nnn */
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin-top: 2rem;
+    width: 180px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-end;
+    padding-top: 1rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .btn, .btn-outline {
+    margin: 0.4rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
