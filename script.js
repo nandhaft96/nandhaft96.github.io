@@ -39,9 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   typeWriter();
-});
-// Scroll reveal effect
-const reveals = document.querySelectorAll(".reveal");
+
+  const reveals = document.querySelectorAll(".reveal");
 const revealOnScroll = () => {
   for (let el of reveals) {
     const top = el.getBoundingClientRect().top;
@@ -52,4 +51,7 @@ const revealOnScroll = () => {
 };
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+});
+// Scroll reveal effect
+
 
