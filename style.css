@@ -280,4 +280,11 @@ body:not(.dark) .nav-links a {
     grid-template-columns: 1fr;
   }
 }
+/* kmk */
+body:not(.dark) h1,
+body:not(.dark) h2,
+body:not(.dark) h3,
+body:not(.dark) p {
+  color: #111 !important;
+}
 
