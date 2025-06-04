@@ -3,28 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nandha Kumar | Full-Stack Developer</title>
+    <title>Nandha Kumar | Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/img/dev-icon.svg" />
+    <link rel="icon" type="image/png" href="assets/img/profile.png">
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="container nav-container">
-          <a href="#" class="logo">
-            <img src="assets/img/dev-icon.svg" alt="Dev Icon" style="width: 28px; vertical-align: middle; margin-right: 8px;" />
-            Nandha Kumar
-          </a>
+          <a href="#" class="logo">Nandha Kumar</a>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><button class="toggle-theme" id="toggle-theme">🌚</button></li>
           </ul>
@@ -32,126 +28,91 @@
       </nav>
     </header>
 
-<!--     <section class="hero">
+    <section class="hero">
       <div class="container hero-content">
         <div>
           <h1>Hello, I'm <span class="highlight"></span></h1>
-          <p>Complex problem-solver with a passion for scalable web applications and innovative tech. Backend-heavy full-stack developer with a cloud-native and AI twist.</p>
+          <p>A Full-Stack Developer, Cloud Enthusiast, and Problem Solver</p>
           <div class="buttons">
             <a href="mailto:nandhu1296@ymail.com" class="btn">Hire Me</a>
-            <a href="assets/pdf/NANDHA_KUMAR_Resume.pdf" class="btn-outline" download>Download Resume</a>
+            <a href="assets/pdf/NANDHA_KUMAR_Resume.pdf" class="btn-outline" download>Resume</a>
           </div>
         </div>
         <img src="assets/img/profile.png" alt="Nandha Kumar" class="profile-img" />
       </div>
-    </section> -->
-    <section class="intro-card">
-  <div class="container card-layout">
-    <!-- Left Panel -->
-    <div class="card-left">
-      <img src="assets/img/profile.png" alt="Nandha Kumar" class="avatar" />
-      <h1>Nandha Kumar</h1>
-      <p class="title">Full-Stack Developer</p>
-      <ul class="quick-facts">
-        <li><strong>Education:</strong> MS in CS, Wichita State University</li>
-        <li><strong>Experience:</strong> Intel, Infosys, Startups</li>
-        <li><strong>Specialty:</strong> Backend, Cloud, ML</li>
-      </ul>
-    </div>
+    </section>
 
-    <!-- Right Panel -->
-    <div class="card-right">
-      <h2>About Me</h2>
-      <p>
-        Backend-heavy full-stack developer passionate about building scalable, intelligent systems.
-        Experienced in designing APIs, deploying cloud-native solutions, and creating ML prototypes. I believe in clean code, functional design, and lifelong learning.
-      </p>
-      <div class="buttons">
-        <a href="assets/pdf/NANDHA_KUMAR_Resume.pdf" class="btn" download>Resume</a>
-        <a href="#projects" class="btn-outline">Portfolio</a>
-        <a href="mailto:nandhu1296@ymail.com" class="btn-outline">Email Me</a>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I am a Master's student at Wichita State University with 3+ years of experience in software development. My passion lies in crafting scalable systems, building intelligent tools, and creating beautiful yet functional applications. I have interned at Intel, worked at Infosys, and built products across full-stack, data science, and cloud domains.</p>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-    <main class="container">
-      <section class="two-column">
-        <div class="left-column">
-          <section id="about">
-            <h2>About Me</h2>
-            <p>Full-stack engineer with 3+ years' experience. Former intern at Intel, ex-Infosys developer, and an AI/Cloud enthusiast. Skilled in architecting backend-heavy apps, optimizing APIs, and delivering cross-functional features.</p>
-          </section>
-
-          <section id="experience">
-            <h2>Experience</h2>
-            <ul class="timeline">
-              <li>
-                <h3>Intel Corporation</h3>
-                <p>Graduate Technical Intern<br>API-driven test automation & multi-threaded pipeline systems.</p>
-              </li>
-              <li>
-                <h3>Infosys Ltd</h3>
-                <p>Senior Software Engineer<br>Developed robust server-side apps using Spring, Django, and AWS.</p>
-              </li>
-              <li>
-                <h3>Turabit Solutions</h3>
-                <p>Software Engineer<br>Built IT automation chatbots and web apps with REST & MongoDB.</p>
-              </li>
-            </ul>
-          </section>
-
-          <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-              <li>AWS Certified Developer - Associate</li>
-              <li>Google Cloud Fundamentals</li>
-              <li>Data Science Specialization - Coursera</li>
-            </ul>
-          </section>
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+          <div class="card">Languages: Python, Java, Go, PHP</div>
+          <div class="card">Web: HTML5, CSS3, JavaScript, Bootstrap, React</div>
+          <div class="card">Frameworks: Django, Flask, Spring</div>
+          <div class="card">Databases: MySQL, PostgreSQL, MongoDB</div>
+          <div class="card">Tools: Git, Docker, AWS, REST APIs</div>
+          <div class="card">Machine Learning: TensorFlow, LSTM, CNN</div>
         </div>
+      </div>
+    </section>
 
-        <div class="right-column">
-          <section id="skills">
-            <h2>Tech Stack</h2>
-            <ul class="skills-list">
-              <li>Python, Java, Go, PHP</li>
-              <li>React, HTML, CSS, JS</li>
-              <li>Django, Flask, Spring</li>
-              <li>MySQL, PostgreSQL, MongoDB</li>
-              <li>Docker, Git, AWS, REST APIs</li>
-              <li>TensorFlow, NLP, OpenCV</li>
-            </ul>
-          </section>
-
-          <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-              <div class="card">
-                <h3>Stock Market API</h3>
-                <p>Built a real-time stock price API with AWS Lambda & DynamoDB.</p>
-                <a href="https://github.com/shmoksh/Stock-Market-Rest-API">View Code</a>
-              </div>
-              <div class="card">
-                <h3>Image Captioning</h3>
-                <p>Created an AI that generates captions using CNN+LSTM on Flickr8K.</p>
-                <a href="https://github.com/shmoksh/Image-Captioning-in-Deep-Learning">View Code</a>
-              </div>
-              <div class="card">
-                <h3>Tic Tac Toe AI</h3>
-                <p>AI agent solving Tic Tac Toe using Minimax and Alpha-Beta pruning.</p>
-              </div>
-            </div>
-          </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="assets/img/project1.jpg" alt="Stock Market API" />
+            <h3>Stock Market API</h3>
+            <p>RESTful API with AWS & DynamoDB for financial data.</p>
+            <a href="https://github.com/shmoksh/Stock-Market-Rest-API">View Code</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/project2.jpg" alt="Tic Tac Toe AI" />
+            <h3>Tic Tac Toe AI</h3>
+            <p>Game-solving AI using Minimax with alpha-beta pruning.</p>
+            <a href="#">View Code</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/project3.jpg" alt="Image Captioning" />
+            <h3>Image Captioning</h3>
+            <p>Deep learning model combining CNN and LSTM on Flickr8K.</p>
+            <a href="https://github.com/shmoksh/Image-Captioning-in-Deep-Learning">View Code</a>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Intel Corporation</h3>
+            <p>Graduate Technical Intern (2021)<br />Developed multi-threaded test automation with API integration.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Turabit Solutions</h3>
+            <p>Software Engineer (2018–2019)<br />Built conversational AI chatbot for IT automation.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Infosys Ltd</h3>
+            <p>Senior Software Engineer<br />Worked on scalable web platforms and cloud deployments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="contact" class="section">
       <div class="container">
         <h2>Let's Connect</h2>
-        <p>📍 Wichita, KS, USA<br>📧 nandhu1296@ymail.com<br>📱 +1 (316) 927-8500</p>
+        <p>📍 Kansas, USA<br />📧 nandhu1296@ymail.com<br />📱 +1 (316) 927-8500</p>
         <div class="social-links">
           <a href="https://linkedin.com/in/nandhu1296">LinkedIn</a>
           <a href="https://github.com/nandhu1296">GitHub</a>
@@ -161,7 +122,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Nandha Kumar. Built with <span style="color: red;">&hearts;</span> and GitHub Pages. Always evolving.</p>
+      <p>&copy; 2025 Nandha Kumar. Designed with passion, deployed on GitHub Pages.</p>
     </footer>
   </body>
 </html>
