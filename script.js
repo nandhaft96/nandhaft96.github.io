@@ -40,17 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeWriter();
 
-  const reveals = document.querySelectorAll(".reveal");
-const revealOnScroll = () => {
-  for (let el of reveals) {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add("visible");
-    }
-  }
-};
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+//   const reveals = document.querySelectorAll(".reveal");
+// const revealOnScroll = () => {
+//   for (let el of reveals) {
+//     const top = el.getBoundingClientRect().top;
+//     if (top < window.innerHeight - 100) {
+//       el.classList.add("visible");
+//     }
+//   }
+// };
+// window.addEventListener("scroll", revealOnScroll);
+// revealOnScroll();
 });
 // Scroll reveal effect
 
