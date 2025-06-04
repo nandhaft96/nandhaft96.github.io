@@ -4,8 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Fira Code', monospace;
+/*   font-family: 'Fira Code', monospace; */
+    font-family: 'Inter', sans-serif;
   background-color: #0e0e0e;
   color: #eaeaea;
   transition: background 0.3s, color 0.3s;
@@ -27,8 +32,14 @@ img {
 
 /* Navbar */
 .navbar {
-  background: #1a1a1a;
-  padding: 1rem 0;
+/*   background: #1a1a1a;
+  padding: 1rem 0; */
+   position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: inherit;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 .nav-container {
   display: flex;
@@ -193,51 +204,51 @@ footer {
 
 /* vb */
 /* === Light Theme Styles === */
-body:not(.dark) {
+:not(.dark) {
   background-color: #f8f9fa;
   color: #111;
 }
 
-body:not(.dark) .navbar,
-body:not(.dark) footer {
+:not(.dark) .navbar,
+:not(.dark) footer {
   background-color: #ffffff;
   color: #333;
 }
 
-body:not(.dark) .logo {
+:not(.dark) .logo {
   color: #007acc;
 }
 
-body:not(.dark) .card {
+:not(.dark) .card {
   background-color: #ffffff;
   color: #111;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-body:not(.dark) .btn {
+:not(.dark) .btn {
   background-color: #007acc;
   color: white;
 }
 
-body:not(.dark) .btn-outline {
+:not(.dark) .btn-outline {
   border-color: #007acc;
   color: #007acc;
 }
 
-body:not(.dark) .btn-outline:hover {
+:not(.dark) .btn-outline:hover {
   background-color: #007acc;
   color: white;
 }
 
-body:not(.dark) .bg-light {
+:not(.dark) .bg-light {
   background-color: #f1f1f1;
 }
 
-body:not(.dark) .highlight {
+:not(.dark) .highlight {
   color: #007acc;
 }
 
-body:not(.dark) .nav-links a {
+:not(.dark) .nav-links a {
   color: #333;
 }
 /* nnn */
@@ -286,10 +297,10 @@ body:not(.dark) .nav-links a {
   }
 }
 /* kmk */
-body:not(.dark) h1,
-body:not(.dark) h2,
-body:not(.dark) h3,
-body:not(.dark) p {
+:not(.dark) h1,
+:not(.dark) h2,
+:not(.dark) h3,
+:not(.dark) p {
   color: #111 !important;
 }
 /* ll */
@@ -388,7 +399,7 @@ body:not(.dark) p {
 }
 
 /* Light mode override for profile card */
-body:not(.dark) .card-left {
+:not(.dark) .card-left {
   background: #f0f0f0;
   color: #111;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -415,12 +426,27 @@ body:not(.dark) .card-left {
 }
 
 /* Light mode fix */
-body:not(.dark) .icon-row {
+:not(.dark) .icon-row {
   background-color: rgba(0, 0, 0, 0.05);
 }
-body:not(.dark) .icon-row img {
+:not(.dark) .icon-row img {
   background: #f9f9f9;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
 
+.social-links a:hover,
+.btn:hover,
+.btn-outline:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
 
