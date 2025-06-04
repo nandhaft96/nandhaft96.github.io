@@ -1,33 +1,28 @@
-// Theme Toggle + Typing Effect
+// Theme Toggle and Typing Effect
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("toggle-theme");
   const body = document.body;
 
-  // Default dark
+  // Default to dark mode
   body.classList.add("dark");
-
   toggleBtn.textContent = "🌚";
 
   toggleBtn.addEventListener("click", () => {
     body.classList.toggle("dark");
-    const isDark = body.classList.contains("dark");
-    toggleBtn.textContent = isDark ? "🌚" : "🌞";
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggleBtn.textContent = body.classList.contains("dark") ? "🌚" : "🌞";
   });
 
-  // Typing Effect
+  // Typing effect
   const nameEl = document.querySelector("h1 .highlight");
   const nameText = "Nandha Kumar";
   let i = 0;
-
   function typeWriter() {
     if (i < nameText.length) {
       nameEl.textContent += nameText.charAt(i);
       i++;
-      setTimeout(typeWriter, 100);
+      setTimeout(typeWriter, 120);
     }
   }
-
   nameEl.textContent = "";
   typeWriter();
 });
