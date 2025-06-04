@@ -40,3 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeWriter();
 });
+// Scroll reveal effect
+const reveals = document.querySelectorAll(".reveal");
+const revealOnScroll = () => {
+  for (let el of reveals) {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add("visible");
+    }
+  }
+};
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
