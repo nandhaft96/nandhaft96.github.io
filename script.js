@@ -13,9 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Typing effect
-  const nameEl = document.querySelector("h1 .highlight");
+//   const nameEl = document.querySelector("h1 .highlight");
+//   const nameText = "Nandha Kumar";
+//   let i = 0;
+//   function typeWriter() {
+//     if (i < nameText.length) {
+//       nameEl.textContent += nameText.charAt(i);
+//       i++;
+//       setTimeout(typeWriter, 120);
+//     }
+//   }
+//   nameEl.textContent = "";
+//   typeWriter();
+// });
+  const nameEl = document.getElementById("typed-name");
   const nameText = "Nandha Kumar";
   let i = 0;
+
   function typeWriter() {
     if (i < nameText.length) {
       nameEl.textContent += nameText.charAt(i);
@@ -23,6 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(typeWriter, 120);
     }
   }
-  nameEl.textContent = "";
+
   typeWriter();
 });
